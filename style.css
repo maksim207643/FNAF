@@ -1,0 +1,73 @@
+/* Базовые стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Impact', sans-serif;
+    background: linear-gradient(to bottom, #111, #000);
+    color: #fff;
+}
+
+/* Шапка сайта */
+.header {
+    background: #222;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.7);
+}
+
+.logo h1 {
+    font-size: 36px;
+    text-shadow: 1px 1px 2px rgba(255,255,0,0.8);
+    color: #ff0;
+    letter-spacing: 2px;
+}
+
+/* Навигация */
+.nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    transition: all 0.3s;
+}
+
+.nav a:hover {
+    background: rgba(255,255,0,0.3);
+    border-radius: 5px;
+}
+
+/* Основной контент */
+.content {
+    padding: 20px;
+    min-height: calc(100vh - 120px);
+    color: #ddd;
+}
+
+/* Футер */
+.footer {
+    background: #111;
+    padding: 15px;
+    text-align: center;
+    color: #999;
+}
+
+/* Анимации */
+@keyframes glow {
+    0% { text-shadow: 0 0 5px #ff0; }
+    50% { text-shadow: 0 0 15px #ff0; }
+    100% { text-shadow: 0 0 5px #ff0; }
+}
+
+.logo h1 {
+    animation: glow 3s infinite;
+}
